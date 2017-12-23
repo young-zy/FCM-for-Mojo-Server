@@ -103,9 +103,9 @@ function handle(req, res) {
             }));
             break;
         case '/ffm/get_qr_code':
-            fs.readFile('/tmp/mojo_webqq_qrcode_ffm.png', (err, buf) => {
+            fs.readFile('/var/www/html/mojo_webqq_qrcode_ffm.png', (err, buf) => {
                 if (err) {
-                    console.error("/tmp/mojo_webqq_qrcode_ffm.png: no such file");
+                    console.error("/var/www/html/mojo_webqq_qrcode_ffm.png: no such file");
                     res.writeHead(404);
                     res.end();
                     return;
