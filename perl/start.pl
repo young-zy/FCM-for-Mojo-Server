@@ -16,7 +16,7 @@ my $client = Mojo::Webqq->new(
     log_encoding           => 'utf8',
     poll_failure_count_max => 20,
     account                => 'ffm',
-    qrcode_path            => '/tmp/mojo_webqq_qrcode_ffm.png'
+    qrcode_path            => '/var/www/html/mojo_webqq_qrcode_ffm.png'
 );
 
 $client->load('ShowMsg');
